@@ -481,85 +481,85 @@ window.mainloop()
 
 
 # n ta tub sonni chiqarish dasturi
-from tkinter import*
-from math import*
-def tub():
-    n = int(son.get())
-    natija.delete(0.0,END)
-    b=2
-    s=0
-    while True:
-        for i in range(2,int(sqrt(b)+1)):
-            if b%i==0:
-                break
-        else:
-            s+=1
-            satr = str(b)+'\n'
-            natija.insert(END,satr)
-        b+=1
-        if s==n:
-            break
-ilova = Tk()
-ilova.title('Tub son')
-ilova.geometry('250x250')
-ilova.config(bg='red')
+# from tkinter import*
+# from math import*
+# def tub():
+#     n = int(son.get())
+#     natija.delete(0.0,END)
+#     b=2
+#     s=0
+#     while True:
+#         for i in range(2,int(sqrt(b)+1)):
+#             if b%i==0:
+#                 break
+#         else:
+#             s+=1
+#             satr = str(b)+'\n'
+#             natija.insert(END,satr)
+#         b+=1
+#         if s==n:
+#             break
+# ilova = Tk()
+# ilova.title('Tub son')
+# ilova.geometry('250x250')
+# ilova.config(bg='red')
 
-nechta = Label(ilova,bg='red',text='Nechta tub son chiqsin')
-nechta.grid(row=0,column=0)
+# nechta = Label(ilova,bg='red',text='Nechta tub son chiqsin')
+# nechta.grid(row=0,column=0)
 
-son = Entry(ilova,bg='yellow',width=5)
-son.grid(row=1,column=0)
+# son = Entry(ilova,bg='yellow',width=5)
+# son.grid(row=1,column=0)
 
-natija = Text(ilova,bg='yellow',width=6,height=10)
-natija.grid(row=2,column=0)
+# natija = Text(ilova,bg='yellow',width=6,height=10)
+# natija.grid(row=2,column=0)
 
-tugma = Button(ilova,bg='yellow',text='Tub sonlar',command = tub)
-tugma.grid(row=1,column=1)
+# tugma = Button(ilova,bg='yellow',text='Tub sonlar',command = tub)
+# tugma.grid(row=1,column=1)
 
-ilova.mainloop()
+# ilova.mainloop()
 
 # Kiritilgan ikki sonni EKUB ini hisoblash dasturi
-from tkinter import*
-from math import*
+# from tkinter import*
+# from math import*
 
-def ekub():
-    a=int(son.get())
-    b=int(son1.get())
-    natija.delete(0.0,END)
-    while a!=0 and b!=0:
-        if a>b:
-            a%=b
-        else:
-            b%=a
-    ekub_2=a+b
-    natija.insert(END,ekub_2)
-ilova = Tk()
-ilova.title('EKUB(a,b)')
-ilova.config(bg='yellow')
-ilova.geometry('250x250')
+# def ekub():
+#     a=int(son.get())
+#     b=int(son1.get())
+#     natija.delete(0.0,END)
+#     while a!=0 and b!=0:
+#         if a>b:
+#             a%=b
+#         else:
+#             b%=a
+#     ekub_2=a+b
+#     natija.insert(END,ekub_2)
+# ilova = Tk()
+# ilova.title('EKUB(a,b)')
+# ilova.config(bg='yellow')
+# ilova.geometry('250x250')
 
-son_matni = Label(ilova,bg='yellow',text='Birinchi son : ')
-son_matni.grid(row=0,column=0)
+# son_matni = Label(ilova,bg='yellow',text='Birinchi son : ')
+# son_matni.grid(row=0,column=0)
 
-son1_matni = Label(ilova,bg='yellow',text='Ikkinchi son : ')
-son1_matni.grid(row=0,column=1)
+# son1_matni = Label(ilova,bg='yellow',text='Ikkinchi son : ')
+# son1_matni.grid(row=0,column=1)
 
-son = Entry(ilova,bg='pink',width=6)
-son.grid(row=1,column=0)
+# son = Entry(ilova,bg='pink',width=6)
+# son.grid(row=1,column=0)
 
-son1 = Entry(ilova,bg='pink',width=6)
-son1.grid(row=1,column=1)
+# son1 = Entry(ilova,bg='pink',width=6)
+# son1.grid(row=1,column=1)
 
-natija_matni = Label(ilova,bg='yellow',text='Natija')
-natija_matni.grid(row=2,column=0)
+# natija_matni = Label(ilova,bg='yellow',text='Natija')
+# natija_matni.grid(row=2,column=0)
 
-natija = Text(ilova,bg='pink',width=6,height=10)
-natija.grid(row=3,column=0)
+# natija = Text(ilova,bg='pink',width=6,height=10)
+# natija.grid(row=3,column=0)
 
-tugma = Button(ilova,bg='pink',text='EKUB(a;b)',command=ekub)
-tugma.grid(row=1,column=3)
+# tugma = Button(ilova,bg='pink',text='EKUB(a;b)',command=ekub)
+# tugma.grid(row=1,column=3)
 
-ilova.mainloop()
+# ilova.mainloop()
 
 
 
